@@ -1,0 +1,117 @@
+\begin{thebibliography}{10}
+
+\bibitem{ferris2007wifi}
+Ferris, B., Fox, D., Lawrence, N.D.:
+\newblock Wifi-slam using gaussian process latent variable models.
+\newblock In: IJCAI. Volume~7. (2007)  2480--2485
+
+\bibitem{bekkelien2012bluetooth}
+Bekkelien, A., Deriaz, M., Marchand-Maillet, S.:
+\newblock Bluetooth indoor positioning.
+\newblock (2012)
+
+\bibitem{ganick2013light}
+Ganick, A., Ryan, D.:
+\newblock Light positioning system using digital pulse recognition (January~31
+  2013) US Patent 20,130,028,475.
+
+\bibitem{racoma2013indooratlas}
+Racoma, J.A.:
+\newblock Indooratlas uses magnetic fields for location-awareness in buildings
+  and large structures (2013)
+
+\bibitem{mulloni2009indoor}
+Mulloni, A., Wagner, D., Barakonyi, I., Schmalstieg, D.:
+\newblock Indoor positioning and navigation with camera phones.
+\newblock Pervasive Computing, IEEE \textbf{8}(2) (2009)  22--31
+
+\bibitem{kawaji2010image}
+Kawaji, H., Hatada, K., Yamasaki, T., Aizawa, K.:
+\newblock An image-based indoor positioning for digital museum applications.
+\newblock In: Virtual Systems and Multimedia (VSMM), 2010 16th International
+  Conference on, IEEE (2010)  105--111
+
+\bibitem{bilton2012behind}
+Bilton, N.:
+\newblock Behind the google goggles, virtual reality.
+\newblock Published: February \textbf{22} (2012)
+
+\bibitem{chen2011city}
+Chen, D.M., Baatz, G., Koser, K., Tsai, S.S., Vedantham, R., Pylvanainen, T.,
+  Roimela, K., Chen, X., Bach, J., Pollefeys, M.,  et~al.:
+\newblock City-scale landmark identification on mobile devices.
+\newblock In: Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on, IEEE (2011)  737--744
+
+\bibitem{hile2008positioning}
+Hile, H., Borriello, G.:
+\newblock Positioning and orientation in indoor environments using camera
+  phones.
+\newblock Computer Graphics and Applications, IEEE \textbf{28}(4) (2008)
+  32--39
+
+\bibitem{wiki-sma}
+wikipedia:
+\newblock Simple moving average
+
+\bibitem{complementary-filter}
+Glasser, P.C.:
+\newblock An introduction to the use of complementary an introduction to the
+  use of complementary filters for fusion of sensor data.
+\newblock http://www.glassercommunications.com/paul/samples.htm
+
+\bibitem{wiki-angle-of-view}
+wikipedia:
+\newblock Angle of view
+
+\bibitem{wiki-taipei101}
+wikipedia:
+\newblock Taipei 101
+
+\bibitem{wiki-projection}
+wikipedia:
+\newblock Orthographic projection
+
+\bibitem{android-sensors-apis}
+Developers, A.:
+\newblock Sensors overview | android developers.
+\newblock
+  \url{http://developer.android.com/guide/topics/sensors/sensors_overview.html}
+  (2013)
+
+\bibitem{wiki-spherical-coordinate-system}
+wikipedia:
+\newblock Spherical coordinate system
+
+\bibitem{developers2013adt}
+Developers, A.:
+\newblock Android developer tools (adt) plugin for eclipse.
+\newblock URl: http://developer.android.com/tools/ (2013)
+
+\bibitem{mackintosh2012zxing}
+Mackintosh, A., Martin, A., Brown, B., Brunschen, C., Daniel, S.:
+\newblock Zxing, open source library to read 1d/2d barcodes (2012)
+
+\bibitem{colton2007balance}
+Colton, S., Mentor, F.:
+\newblock The balance filter.
+\newblock Presentation, Massachusetts Institute of Technology (2007)
+
+\bibitem{bernstein1998introduction}
+Bernstein, D., Kornhauser, A.:
+\newblock An introduction to map matching for personal navigation assistants.
+\newblock (1998)
+
+\bibitem{jin2011robust}
+Jin, Y., Toh, H.S., Soh, W.S., Wong, W.C.:
+\newblock A robust dead-reckoning pedestrian tracking system with low cost
+  sensors.
+\newblock In: Pervasive Computing and Communications (PerCom), 2011 IEEE
+  International Conference on, IEEE (2011)  222--230
+
+\bibitem{source-code}
+Chien, C.S.:
+\newblock A visual-based positioning system source code.
+\newblock https://github.com/wasn-lab/ (2013)
+
+\end{thebibliography}

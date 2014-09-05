@@ -1,0 +1,245 @@
+\subsection{Notations}
+In the following, we summarize the notations used in the rest of the thesis.
+\begin{mydef}
+Angle of View: In photography, angle of view describes the angular extent of a given scene that is imaged by a camera. It is used interchangeably with the more general term field of view~\cite{wiki-angle-of-view}.
+\end{mydef}
+\begin{mydef}
+Angle of Object: Angle of object describes the angular extent of a given object that is imaged by a camera. In our work. The angle of object is denoted as $\alpha$, which is formed by the lines of the top of the object to the camera and the bottom of the object to the camera. Figure~\ref{fig-angle-of-view} illustrates an example of the angle of object.
+\end{mydef}
+
+\subsection{Measurable Reference Point(MRP)}
+When we take a photo which contains an image of a known object, it is possible to derive our current position based on the size and angle of the image of the known object. For the ease of reference, in the rest of this thesis we refer to the known object in the photo as the \emph{Measurable Reference Point} (MRP). Basically, an MRP has a known position as well as the orientation and the size information for reference. For instance, we know the exact location and the height of Taipei 101~\cite{wiki-taipei101}. If our photo contains the image of Taipei 101, we can use it as our MRP to infer our position at the time when the photo is taken.
+
+Optical positioning systems that rely entirely on natural features in the images lack robustness, in particular under conditions with varying illumination. In order to increase robustness and improve accuracy of reference points, dedicated MRP are used for systems with demanding requirements for positioning. The MRP serves three purposes for algorithmic development: First, it simplifies the automatic detection of corresponding points. Second, the shape, size, and location of MRP are known. Third, the MRP can be easily identified and is unique in the positioning environment. One good example of MRP for small and median-scale range is the QR-code, since it is easy to identify and is unique in the target environment.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-taipei101.eps}\\
+  \caption{Schematic diagram for using Taipei101 as MRP}\label{fig-taipei101}
+\end{figure}
+
+\subsection{Angle Measurement}\label{sec-angle-measurement}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-angle-of-view.eps}\\
+  \caption{Angle of view.}\label{fig-angle-of-view}
+\end{figure}
+
+To calculate the angle of object, we first need to obtain the angle of view. The angle of view can be obtained directly from Android API by calling:
+\begin{lstlisting}[frameround=tfff,
+                   columns=fullflexible,
+                   numberstyle=\tiny,
+                   stepnumber=5,
+                   frame=single,
+                   basicstyle={\ttfamily \small},
+                   numbers=left,
+                   commentstyle={\sffamily},
+                   language=java]
+android.hardware.Camera.Parameters.getHorizontalViewAngle();
+android.hardware.Camera.Parameters.getVerticalViewAngle();
+\end{lstlisting}
+
+Here, we treat the lens as if it were a pinhole at distance $S_2$ from the image plane. We can obtain $S_2$ by the following equation.
+\[tan(\frac{\alpha}{2})=\frac{d/2}{S_2}\]
+
+Note that once $S_2$ and the object size \emph{d} are acquired, the object angle can be proportionally calculated by the following equation.
+\[\alpha=2arctan(\frac{d}{2S_2})\]
+
+\subsection{Distance Measurement}
+
+In our computation, we use triangle functions to measure the distance between MRP and the camera.
+Based on the relative orientation of the object to the camera, we separate the distance measurement into three different cases.
+
+\subsubsection{Basic Case}\label{sec-measure-distance-basic-case}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-distance-case1.eps}\\
+  \caption{Measure distance basic case.}\label{fig-distance-case1}
+\end{figure}
+In this case. the MRP object is facing directly toward the center of the camera. Figure~\ref{fig-distance-case1} illustrates an example this case. This is the simplest case for distance measurement. In addition to the size of MRP (denoted as \emph{H}), the additional required parameter of the camera for visual-based localization include the view of angle for the object(denoted as $\theta$). And we can use method mentioned in section~\ref{sec-angle-measurement} to get $\theta$. Once $\theta$ is obtained, the distance between MRP and camera can be computed by the following equation.
+
+\[Dc = \frac{H}{2}/\tan (\frac{\theta }{2})\]
+
+\subsubsection{MRP Shifted on Object Plane}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-distance-case2.eps}\\
+  \caption{Optical projection rule. Same plane have same projection size.}\label{fig-distance-case2}
+\end{figure}
+In this case, the MRP still facing toward the camera, but it is shifted by a distance on the direction perpendicular to the line between the MRP and the camera, as shown in Figure~\ref{fig-distance-case2}. We found a phenomenon that if move MRP from shifted position to the position same as section~\ref{sec-measure-distance-basic-case}, the projected image will keep same size.
+
+\begin{proof}[Proof that object keep fixed ratio relationship with projecting image]
+   Let object plane have parallel relationship with image plane, objects $O_\alpha,O_\beta$ was on object plane, and $P_\alpha,P_\beta$ was projection images of $O_\alpha,O_\beta$ in image plane. The angular extent of $O_\alpha,O_\beta$ imaged by camera was $\alpha,\beta$. And $\gamma$ is angular between $\alpha$ and $\beta$. Distance from lens to object plane (denoted as $Do$) have $x$ scale factor relationship with distance from lens to image plane (denoted as $Dp$).
+  \begin{align*}
+    &P_\alpha=D_p\tan(\alpha)\ \\
+    &O_\alpha=D_o\tan(\alpha)=x(D_p\tan(\alpha))\ \\
+    &O_\alpha=x(P_\alpha)\ \\
+    &P_\beta=D_p\tan(\alpha+\beta+\gamma)-D_p\tan(\alpha+\gamma)=D_p(\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma))\ \\
+    &O_\beta=D_o\tan(\alpha+\beta+\gamma)-D_o\tan(\alpha+\gamma)=x(D_p\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma))\ \\
+    &O_\beta=x(P_\beta)\ \\
+    &\therefore\frac{O_\alpha}{O_\beta}=\frac{P_\alpha}{P_\beta}\ &&\qedhere
+  \end{align*}
+\end{proof}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-proof-projection.eps}\\
+  \caption{Proof that object have fixed ratio relationship with projecting image.}\label{fig-proof-projection}
+\end{figure}
+
+Based on the above proof, we know that the distance between object plane and camera($D_c$) can be calculated directly from the size of the MRP projection.
+
+However, the distance between two planes is not the actual distance between MRP and camera. In order to get the real distance from MRP to camera (denoted as \emph{Ds}), the additional required parameter is the angle between object plane and image plane, denoted as $\alpha$. We can get $\alpha$ by detecting position of MRP in camera image, and then use angle measure method mentioned in seciton~\ref{sec-angle-measurement}. Once $\alpha$ is obtained, according to the trigonometric functions, \emph{Ds} can be computed by equation:
+\[Ds = \frac{{Dc}}{{\cos (\alpha)}}\]
+
+\subsubsection{Unparalleled Relationship}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{fig/fig-distance-case3.eps}\\
+  \caption{Measure distance if MRP rotated.}\label{fig-distance-case3}
+\end{figure}
+In this case. MRP is not faced on object plane. We can imaging that it looks like MRP rotated angle. In this case. The MRP size we measured \emph{L2} will smaller than true situation \emph{L1}. For calculate convenient, we assume camera lens is locate in infinite distance, then the MRP have orthogonal projection relationship~\cite{wiki-projection} with object plane as Figure~\ref{fig-distance-case3} illustrated. The additional required parameter for this case is the angle between MRP and image plane(denoted as $\beta$).
+
+$\beta$ can be obtained by calculate difference between MRP orientation and camera orientation. Unlike orientation of MRP is fixed and known data. Orientation of camera is dynamic. We used Android APIs to get recent orientation of camera. You can reference Android Developer Network ~\cite{android-sensors-apis} for more information related with Sensors APIs.
+
+Once $\beta$ is obtained, according to the trigonometric functions. We can compensate and compute real MRP image size \emph{L1} using below equation, then use \emph{L1} to calculate real distance between MRP and camera:
+\[L1 = \frac{{L2}}{{\cos (\beta )}}\]
+
+\subsection{Coordinate System Transformation}
+Now we have the distance between camera and MRP, orientation of camera, and the position of MRP in camera image. We can use these data to construct a vector \emph{V1} that extends from the mobile device to MRP. Table~\ref{tb-comare-reference-system} summarizes positions of various locations with respect to various reference system.
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+
+    \hline
+    Reference system & Position of MRP & Position of camera\\ \hline
+    Global reference system & $LLA_{MRP}$ & $LLA_{CAMERA}$\\ \hline
+    MRP reference system & (0,0,0) & (x,y,z)\\ \hline
+    Mobile reference system & (D,$\alpha$,$\beta$) & (0,0,0)\\
+    (spherical coordinate system\cite{wiki-spherical-coordinate-system}) & & \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Compare various reference system}\label{tb-comare-reference-system}
+\end{table}
+
+Notice that in mobile reference system, $D$ denotes the radial distance of MRP from the camera, the $\alpha$ and $\beta$ denote the horizontal and vertical angular extent from the center of image to the position of image that MRP located (See Figure~\ref{fig-mobile-reference-system}). For orientation angles, $u,v,w$ denote the pitch, roll, azimuth deviation between camera and MRP (See Figure~\ref{fig-orientation}).
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-mobile-reference-system.eps}\\
+  \caption{Mobile reference system(spherical coordinate system\cite{wiki-spherical-coordinate-system}).}\label{fig-mobile-reference-system}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-orientation.eps}\\
+  \caption{Orientaiton of camera. Notice that we use landscape mode.}\label{fig-orientation}
+\end{figure}
+Note that the global reference position of MRP is known. Hence, if we transform \emph{V1} to MRP reference system, we can easily convert it to the global reference system.
+
+In the following, we summarize the equations that transform \emph{V1} to the MRP coordinate system:
+\begin{enumerate}
+  \item Rotate Y axis(roll angle)
+\[\begin{array}{l}
+x1 = 0\\
+y1 = D\\
+z1 = 0
+\end{array}\]
+  \item Rotate X axis(pitch angle)
+\[\begin{array}{l}
+x2 = x1\\
+y2 = y1 \times \cos (u-\beta)\\
+z2 = y1 \times \sin (u-\beta)\\
+\end{array}\]
+  \item Rotate Z axis(azimuth angle)
+\[\begin{array}{l}
+x3 =  - y2 \times \sin (w-\alpha)\\
+y3 = y2 \times \cos (w-\alpha)\\
+z3 = z2
+\end{array}\]
+  \item Change values order compatible to global reference system Taiwan area(northern/eastern Hemisphere).
+\[\begin{array}{l}
+x =  - x3\\
+y =  - y3\\
+z = z3
+\end{array}\]
+\end{enumerate}
+\newpage
+
+\subsection{Hardware}
+Our hardware environment is the HTC One Android smartphone, which has a build-in camera, gyroscope, geomagnetic field sensors and accelerometers.
+Table~\ref{tb-key-hardware} shows the specification of key hardware components that we used in this project. Of course, our software can be deployed not only to the HTC One but also to any other Android devices.
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l |}
+    \hline
+    Name & Specification \\ \hline
+    Camera & Max Picture Size: 2688 x 1520 \\
+    & Max Video Size: 1920 x 1088 \\
+    & Horizontal View Angle: 69.6 \\
+    &Vertical View Angle: 43 \\ \hline
+    Magnetic field sensor & Vendor: Asahi Kasei Microdevices \\
+    & Model: AK8963 3-axis Magnetic field sensor \\ \hline
+    Accelerometer & Vendor: BOSCH \\
+    & Model: MBA250 3-axis Accelerometer \\ \hline
+    Gyroscope & Vendor: ST Group Ltd. \\
+    & Model: R3GD20 Gyroscope seosnr \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Key hardware components used in visual-based positioning system.}\label{tb-key-hardware}
+\end{table}
+
+\subsection{Software}
+Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers. A developer survey conducted in April–May 2013 found that Android is the most popular platform for developers, used by 71\% of the mobile developer population. Our experimental OS is Android 4.1.2 version. The software is developed under The Eclipse IDE with The Android Developer Tools (ADT) plugin~\cite{developers2013adt}.
+For decoding QR-code. We choose "Zxing~\cite{mackintosh2012zxing}" as our decoding library. ZXing is an open-source, multi-format 1D/2D barcode image processing library implemented in Java.
+
+\subsection{Magnetic Noise Issue}
+After our early system implementation, we found the issue of the magnetic noise. Magnetic noise is derived from device electronic parts and buildings. Section~\ref{complementary-filter} describes the complementary filter which can inhibit magnetic noise.
+
+Complementary Filter for sensor fusion was proposed in~\cite{colton2007balance}. The gyroscope in the device is far more accurate and has a very short response time. Its downside is the dreaded gyro drift. The gyro provides the angular rotation speeds for all three axes. To get the actual orientation, those speed values need to be integrated over time.  This is done by multiplying the angular speeds with the time interval between the last and the current sensor output. This yields a rotation increment. The sum of all rotation increments yields the absolute orientation of the device. During this process small errors are introduced in each iteration. These small errors add up over time resulting in a constant slow rotation of the calculated orientation, the gyro drift.
+
+To avoid both gyro drift and noisy orientation, the gyroscope output is applied only for orientation changes in short time intervals, while the magnetometer/acceletometer data is used as the supporting information over long periods of time. This is equivalent to low-pass filtering of the accelerometer and magnetometer signals and high-pass filtering of the gyroscope signals. The overall sensor fusion and filtering looks like Figure ~\ref{fig-complementary-filter}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/fig-complementary-filter.eps}\\
+  \caption{An overview of the complementary filter.}\label{fig-complementary-filter}
+\end{figure}
+
+The sensors provide their data at (more or less) regular time intervals. Their values can be shown as signals in a graph with the time as the x-axis, similar to an audio signal. The low-pass filtering of the noisy accelerometer/magnetometer signal (accMagOrientation in figure~\ref{fig-complementary-filter}) are orientation angles averaged over time within a constant time window.
+
+Later in the implementation, the low-pass filtering is accomplished by slowly introducing new values from the accelerometer/magnetometer to the absolute orientation:
+\begin{lstlisting}[frameround=tfff,
+                   columns=fullflexible,
+                   numberstyle=\tiny,
+                   stepnumber=5,
+                   frame=single,
+                   basicstyle={\ttfamily \small},
+                   numbers=left,
+                   commentstyle={\sffamily},
+                   language=java]
+// low-pass filtering: every time a new sensor value is available
+// it is weighted with a factor and added to the absolute orientation
+accMagOrientation = (1 - factor) * accMagOrientation + factor * newAccMagValue;
+\end{lstlisting}
+The high-pass filtering of the integrated gyroscope data is done by replacing the filtered high-frequency component from accMagOrientation with the corresponding gyroscope orientation values:
+\begin{lstlisting}[frameround=tfff,
+                   columns=fullflexible,
+                   numberstyle=\tiny,
+                   stepnumber=5,
+                   frame=single,
+                   basicstyle={\ttfamily \small},
+                   numbers=left,
+                   commentstyle={\sffamily},
+                   language=java]
+fusedOrientation =
+    (1 - factor) * newGyroValue;    // high-frequency component
+     + factor * newAccMagValue;     // low-frequency component
+\end{lstlisting}
+
+Standard Complementary Filter is effective in electronic parts noise, but it is ineffective for inhibiting magnetic fields changes from buildings with reinforced concrete and steel structures. To solve magnetic fields changes, we prolong the complementary filter computing time intervals to grant the high-frequency values from gyroscope a higher impact. This change has a non-negligible effect in our experiments.
+
+\subsection{Gyroscope Offset Issue}
+Because we prolong complementary filter computing time intervals. We need more stable gyroscope 
+After long interval Complementary Filter implemented. We found gyro drift can not be inhibit. Need smaller gyro drift for solving this problem. So we stall sampling for a period of time and compensation.
+
+
+%SMA
+in our project is for an n-millisecond sample of closing angle is the mean of the previous n-milliseconds' closing angles. If those angles are Pm,Pm-1,...,Pm-(n-1) then the formula is 

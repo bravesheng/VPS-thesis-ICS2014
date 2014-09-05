@@ -1,0 +1,27 @@
+In this section, we present the related work. In Section~\ref{existing-vps}, we review the existing visual-based positioning systems. Since some of the parameters in our system also rely on filter algorithms for fine tuning, in Section~\ref{filter-algorithms}, we briefly review these filter algorithms.
+
+\subsection{Existing Visual-based Positioning Systems}
+\label{existing-vps}
+
+In 2009, Google presented Google Goggles~\cite{bilton2012behind}. This web service allows a user to take pictures by a smartphone, recognizes famous landmarks in pictures, and searches websites related to the landmarks automatically. In~\cite{chen2011city}, the authors published an extensive landmark dataset and presented a comprehensive pipeline algorithm for mobile location recognition. These services focus on automatic landmark identification instead of positioning.
+
+In~\cite{hile2008positioning}, the authors developed a system that processes a cell-phone camera image and matches detected landmarks from the image to a building. The system calculates camera location and dynamically overlays the derived the characteristics of landmarks directly on the cell-phone image. This system accomplishes positioning by the extraction and matching of the environmental characteristics and features without the uses of reference objects. As a result, this system requires a huge image database to work properly.
+
+In~\cite{kawaji2010image, mulloni2009indoor}, the authors developed a low-cost method of real-time positioning using the built-in camera of a cell-phone. The location of the user is determined by detecting unobtrusive known fiduciary markers around a building. Indoor navigation is allowed by the continuous scanning of environment in real time (15 Hz or more) in search of strategically placed fiduciary markers. The system is only based on paper markers (square markers or frame markers) and static digital maps. No additional infrastructure is needed.
+
+Following these concepts, we intend to implement a real-time visual-based positioning system on an Android-based device to achieve accurate positioning.
+
+\subsection{Filter Algorithms}
+\label{filter-algorithms}
+The readings of accelerometer and magnetometer sensors should be enough to calculate the orientation of device. However, the output of both types of sensors may be inaccurate, especially the output from the magnetometer sensors which includes a lot of noise. In order to reduce noise, we use the following two filters.
+
+\subsubsection{Simple Moving Average Filter}\label{sma-filter}
+In science and engineering, the simple moving average (SMA)~\cite{wiki-sma} is normally taken from an equal number of data on either side of a central value. This ensures that variations in the mean are aligned with the variations in the data rather than being shifted in time.
+
+An example of a simple equally weighted running mean for a n-day sample of closing price is the mean of the previous n days' closing prices. If those prices are Pm,Pm-1,...,Pm-(n-1) then the formula is
+\[SMA = \frac{{{p_m} + {p_{m - 1}} +  \ldots  + {p_{m - (n - 1)}}}}{n}\]
+
+\subsubsection{Complementary Filter}\label{complementary-filter}
+The complementary filter~\cite{complementary-filter} is a frequency domain filter. In its strictest sense, the definition of a complementary filter refers to the use of two or more transfer functions, which are mathematical complements of one another. Thus, if the data from one sensor is operated on by G(s), then the data from the other sensor is operated on by I-G(s), and the sum of
+the transfer functions is I, the identity matrix. In the case of a one-dimensional filter as will be described in this paper, the identity matrix reduces to the scalar number one.
+In a typical two-input system, one input will provide information with high frequency noise, and is thus low-pass filtered. The other input provides information with low frequency noise, and is high-pass filtered. If the low-pass and high-pass filters are mathematical complements, then the output of the filter is the complete reconstruction of the variable being sensed, minus the noise associated with the sensors. 

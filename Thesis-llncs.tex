@@ -1,0 +1,60 @@
+%\usepackage[dvips]{epsfig}
+%\usepackage{graphicx,cite}
+%\usepackage[margin2cm]{geometry}
+%\documentclass[journal]{IEEEtran}
+%\documentclass[10pt,conference,letterpaper,twocolumn]{IEEEtran}
+\documentclass[oribibl]{llncs}
+%\renewcommand{\baselinestretch}{2}
+%\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage[linesnumbered,boxed]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage{listings}
+%\usepackage{amsmath,amsthm,amssymb}
+\usepackage{url}
+\usepackage{wrapfig}
+%\usepackage{balance}
+\newtheorem{mydef}{Definition}
+%\newtheorem{theorem}{Theorem}
+
+\begin{document}
+\title{A Visual-based Positioning System}
+
+
+\author{Cheng-Sheng Chien\inst{1} \and Min-Te Sun\inst{1}
+\institute{Department of Computer Science and Information Engineering,
+\\National Central University, Taiwan}
+\\bravesheng@gmail.com, msun@csie.ncu.edu.tw }
+\maketitle
+\begin{abstract}
+We implemented a visual-based positioning system on the Android-based smartphone. This system uses only build-in camera and sensors in an Android phone. The system works with no other assisted equipments, so it is low-cost and very easy to deploy to consumers with a mobile device. In addition, we conducted small, median, and large-scale field experiments to examine the accuracy and stability of our system. The results indicate that our visual-based positioning system is able to provide a much better accuracy in small and median-scale experiments compared with the global positioning system. In large-scale experiments, the system is able to provide enough accuracy for applications such as virtual augmentations and location-based services.
+\end{abstract}
+\begin{keywords}
+positioning, location-based service, LBS, android, augmented reality
+\end{keywords}
+\section{Introduction}
+\label{introduction}
+\input{Introduction}
+\section{Related Work}
+\label{Related Work}
+\input{RelatedWork}
+\section{Implementation}
+\label{Implementation}
+\input{Implementation}
+\section{Performance}
+\label{Performance}
+\input{Performance}
+\section{Conclusions}
+\label{Conclusions}
+\input{Conclusion}
+%\addcontentsline{toc}{section}{Reference}
+\bibliographystyle{splncs} 
+%\balance
+\bibliography{reference}
+\end{document}

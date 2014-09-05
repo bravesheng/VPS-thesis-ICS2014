@@ -1,0 +1,816 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  5 SEP 2014 15:02
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Thesis-llncs.tex
+(./Thesis-llncs.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(./llncs.cls
+Document Class: llncs 2010/07/12 v2.17 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count95
+)
+(./aliascnt.sty
+Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
+ (./remreset.sty))
+\c@chapter=\count96
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen112
+\tocsecnum=\dimen113
+\tocsectotal=\dimen114
+\tocsubsecnum=\dimen115
+\tocsubsectotal=\dimen116
+\tocsubsubsecnum=\dimen117
+\tocsubsubsectotal=\dimen118
+\tocparanum=\dimen119
+\tocparatotal=\dimen120
+\tocsubparanum=\dimen121
+\fnindent=\dimen122
+\c@@inst=\count97
+\c@@auth=\count98
+\c@auco=\count99
+\instindent=\dimen123
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count100
+\c@case=\count101
+\c@conjecture=\count102
+\c@corollary=\count103
+\c@definition=\count104
+\c@example=\count105
+\c@exercise=\count106
+\c@lemma=\count107
+\c@note=\count108
+\c@problem=\count109
+\c@property=\count110
+\c@proposition=\count111
+\c@question=\count112
+\c@solution=\count113
+\c@remark=\count114
+\headlineindent=\dimen124
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count115
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks19
+\float@box=\box54
+\@float@everytoks=\toks20
+\@floatcapt=\box55
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks21
+\c@algorithm=\count117
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count118
+\c@ALG@rem=\count119
+\c@ALG@nested=\count120
+\ALG@tlm=\skip45
+\ALG@thistlm=\skip46
+\c@ALG@Lnr=\count121
+\c@ALG@blocknr=\count122
+\c@ALG@storecount=\count123
+\c@ALG@tmpcounter=\count124
+\ALG@tmplength=\skip47
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen127
+\epsfysize=\dimen128
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen129
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen130
+\subfiglabelskip=\skip51
+\c@subfigure=\count125
+\c@lofdepth=\count126
+\c@subtable=\count127
+\c@lotdepth=\count128
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count129
+\lst@gtempboxa=\box56
+\lst@token=\toks22
+\lst@length=\count130
+\lst@currlwidth=\dimen131
+\lst@column=\count131
+\lst@pos=\count132
+\lst@lostspace=\dimen132
+\lst@width=\dimen133
+\lst@newlines=\count133
+\lst@lineno=\count134
+\lst@maxwidth=\dimen134
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count135
+\lst@skipnumbers=\count136
+\lst@framebox=\box57
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen135
+\WF@size=\dimen136
+\c@WF@wrappedlines=\count137
+\WF@box=\box58
+\WF@everypar=\toks23
+Package: wrapfig 2003/01/31  v 3.6
+)
+\c@mydef=\count138
+
+(./Thesis-llncs.aux)
+\openout1 = `Thesis-llncs.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count139
+\scratchdimen=\dimen137
+\scratchbox=\box59
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen138
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count145
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 34.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 34.
+
+(./Introduction.tex)
+Overfull \hbox (6.68259pt too wide) in paragraph at lines 3--44
+[]\OT1/cmr/m/n/10 In this re-search, we im-ple-mented a visual-based po-si-tion
+-ing sys-tem on Android-
+ []
+
+(./RelatedWork.tex [1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]) (.
+/Implementation.tex
+Package epstopdf Info: Source file: <fig/fig-taipei101.eps>
+(epstopdf)                    date: 2013-08-29 17:20:23
+(epstopdf)                    size: 1359967 bytes
+(epstopdf)             Output file: <fig/fig-taipei101-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-08-29 17:22:36
+(epstopdf)                    size: 119392 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-taipei101-eps-conv
+erted-to.pdf fig/fig-taipei101.eps>
+(epstopdf)             \includegraphics on input line 5.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-taipei101-eps-converted-to.pdf, id=15, 764.8575pt x 458.71375pt>
+File: fig/fig-taipei101-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/fig-taipei101-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-taipei101-eps-converted-to.pdf used on input l
+ine 5.
+(pdftex.def)             Requested size: 180.67499pt x 108.3577pt.
+
+Underfull \hbox (badness 2961) in paragraph at lines 13--14
+[]\OT1/cmr/m/it/10 Angle of View: In
+ []
+
+[3 <./fig/fig-taipei101-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/fig-angle-of-view.eps>
+(epstopdf)                    date: 2013-08-19 16:31:57
+(epstopdf)                    size: 1590002 bytes
+(epstopdf)             Output file: <fig/fig-angle-of-view-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2013-08-19 16:32:09
+(epstopdf)                    size: 67493 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-angle-of-view-eps-
+converted-to.pdf fig/fig-angle-of-view.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-angle-of-view-eps-converted-to.pdf, id=32, 908.39375pt x 577.15625pt>
+File: fig/fig-angle-of-view-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/fig-angle-of-view-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-angle-of-view-eps-converted-to.pdf used on inp
+ut line 43.
+(pdftex.def)             Requested size: 180.67499pt x 114.78632pt.
+
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 43--44
+ [] 
+ []
+
+Package epstopdf Info: Source file: <fig/fig-distance-case1.eps>
+(epstopdf)                    date: 2013-08-29 17:16:15
+(epstopdf)                    size: 150479 bytes
+(epstopdf)             Output file: <fig/fig-distance-case1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-29 17:22:38
+(epstopdf)                    size: 32934 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-distance-case1-eps
+-converted-to.pdf fig/fig-distance-case1.eps>
+(epstopdf)             \includegraphics on input line 66.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-distance-case1-eps-converted-to.pdf, id=33, 1135.24126pt x 435.6275pt>
+File: fig/fig-distance-case1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/fig-distance-case1-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-distance-case1-eps-converted-to.pdf used on in
+put line 66.
+(pdftex.def)             Requested size: 180.67499pt x 69.32957pt.
+
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 66--67
+ [] 
+ []
+
+[4 <./fig/fig-angle-of-view-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/fig-distance-case2.eps>
+(epstopdf)                    date: 2013-08-29 17:17:34
+(epstopdf)                    size: 181371 bytes
+(epstopdf)             Output file: <fig/fig-distance-case2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-29 17:22:39
+(epstopdf)                    size: 47123 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-distance-case2-eps
+-converted-to.pdf fig/fig-distance-case2.eps>
+(epstopdf)             \includegraphics on input line 85.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-distance-case2-eps-converted-to.pdf, id=57, 1132.23pt x 513.92pt>
+File: fig/fig-distance-case2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/fig-distance-case2-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-distance-case2-eps-converted-to.pdf used on in
+put line 85.
+(pdftex.def)             Requested size: 180.67499pt x 82.00146pt.
+
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 85--86
+ [] 
+ []
+
+[5 <./fig/fig-distance-case1-eps-converted-to.pdf> <./fig/fig-distance-case2-ep
+s-converted-to.pdf>]
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 120.
+
+Package epstopdf Info: Source file: <fig/fig-proof-projection.eps>
+(epstopdf)                    date: 2013-08-29 17:18:37
+(epstopdf)                    size: 290885 bytes
+(epstopdf)             Output file: <fig/fig-proof-projection-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2013-08-29 17:22:40
+(epstopdf)                    size: 86735 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-proof-projection-e
+ps-converted-to.pdf fig/fig-proof-projection.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-proof-projection-eps-converted-to.pdf, id=97, 1146.2825pt x 536.0025pt
+>
+File: fig/fig-proof-projection-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/fig-proof-projection-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-proof-projection-eps-converted-to.pdf used on 
+input line 123.
+(pdftex.def)             Requested size: 180.67499pt x 84.47809pt.
+
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 123--124
+ [] 
+ []
+
+Package epstopdf Info: Source file: <fig/fig-distance-case3.eps>
+(epstopdf)                    date: 2013-08-29 17:19:07
+(epstopdf)                    size: 791810 bytes
+(epstopdf)             Output file: <fig/fig-distance-case3-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-29 17:22:42
+(epstopdf)                    size: 126866 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-distance-case3-eps
+-converted-to.pdf fig/fig-distance-case3.eps>
+(epstopdf)             \includegraphics on input line 144.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-distance-case3-eps-converted-to.pdf, id=98, 850.17625pt x 492.84125pt>
+File: fig/fig-distance-case3-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/fig-distance-case3-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-distance-case3-eps-converted-to.pdf used on in
+put line 144.
+(pdftex.def)             Requested size: 180.67499pt x 104.73302pt.
+
+Overfull \hbox (14.45378pt too wide) in paragraph at lines 144--145
+ [] 
+ []
+
+[6 <./fig/fig-proof-projection-eps-converted-to.pdf> <./fig/fig-distance-case3-
+eps-converted-to.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 166.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 166.
+Package epstopdf Info: Source file: <fig/fig-mobile-reference-system.eps>
+(epstopdf)                    date: 2013-08-29 17:22:07
+(epstopdf)                    size: 428631 bytes
+(epstopdf)             Output file: <fig/fig-mobile-reference-system-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2013-08-29 17:22:43
+(epstopdf)                    size: 36345 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-mobile-reference-s
+ystem-eps-converted-to.pdf fig/fig-mobile-reference-system.eps>
+(epstopdf)             \includegraphics on input line 186.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-mobile-reference-system-eps-converted-to.pdf, id=163, 964.60374pt x 62
+2.325pt>
+File: fig/fig-mobile-reference-system-eps-converted-to.pdf Graphic file (type p
+df)
+ <use fig/fig-mobile-reference-system-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-mobile-reference-system-eps-converted-to.pdf u
+sed on input line 186.
+(pdftex.def)             Requested size: 173.56177pt x 111.97568pt.
+Package epstopdf Info: Source file: <fig/fig-orientation.eps>
+(epstopdf)                    date: 2013-07-20 23:40:06
+(epstopdf)                    size: 847428 bytes
+(epstopdf)             Output file: <fig/fig-orientation-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-08-06 17:06:27
+(epstopdf)                    size: 65652 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-orientation-eps-co
+nverted-to.pdf fig/fig-orientation.eps>
+(epstopdf)             \includegraphics on input line 192.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-orientation-eps-converted-to.pdf, id=164, 772.8875pt x 540.0175pt>
+File: fig/fig-orientation-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/fig-orientation-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-orientation-eps-converted-to.pdf used on input
+ line 192.
+(pdftex.def)             Requested size: 173.56177pt x 121.26797pt.
+
+Overfull \hbox (24.38318pt too wide) in paragraph at lines 184--197
+ [] 
+ []
+
+[7]
+Overfull \hbox (51.15489pt too wide) in paragraph at lines 232--233
+[]\OT1/cmr/m/n/10 Change val-ues or-der com-pat-i-ble to global ref-er-ence sys
+-tem Tai-wan area(northern/eastern
+ []
+
+[8 <./fig/fig-mobile-reference-system-eps-converted-to.pdf> <./fig/fig-orientat
+ion-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/fig-complementary-filter.eps>
+(epstopdf)                    date: 2013-07-18 20:07:01
+(epstopdf)                    size: 134823 bytes
+(epstopdf)             Output file: <fig/fig-complementary-filter-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2013-08-06 17:06:18
+(epstopdf)                    size: 54431 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/fig-complementary-filt
+er-eps-converted-to.pdf fig/fig-complementary-filter.eps>
+(epstopdf)             \includegraphics on input line 270.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/fig-complementary-filter-eps-converted-to.pdf, id=198, 557.08125pt x 185.6
+9376pt>
+File: fig/fig-complementary-filter-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use fig/fig-complementary-filter-eps-converted-to.pdf>
+Package pdftex.def Info: fig/fig-complementary-filter-eps-converted-to.pdf used
+ on input line 270.
+(pdftex.def)             Requested size: 202.35622pt x 67.45038pt.
+ [9 <./fig/fig-complementary-filter-eps-converted-to.pdf>]
+Overfull \hbox (15.1233pt too wide) in paragraph at lines 294--294
+[]\OT1/cmtt/m/n/10 // it is weighted with a factor and added to the absolute or
+ientation[] 
+ []
+
+
+Overfull \hbox (67.62285pt too wide) in paragraph at lines 294--294
+[]\OT1/cmtt/m/n/10 accMagOrientation = (1 - factor) * accMagOrientation + facto
+r * newAccMagValue;[] 
+ []
+
+) (./Performance.tex [10]
+Package epstopdf Info: Source file: <fig/small-scale-scenes.eps>
+(epstopdf)                    date: 2013-07-18 14:58:33
+(epstopdf)                    size: 1872836 bytes
+(epstopdf)             Output file: <fig/small-scale-scenes-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-06 17:06:28
+(epstopdf)                    size: 151133 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/small-scale-scenes-eps
+-converted-to.pdf fig/small-scale-scenes.eps>
+(epstopdf)             \includegraphics on input line 8.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/small-scale-scenes-eps-converted-to.pdf, id=210, 374.39874pt x 260.975pt>
+File: fig/small-scale-scenes-eps-converted-to.pdf Graphic file (type pdf)
+
+<use fig/small-scale-scenes-eps-converted-to.pdf>
+Package pdftex.def Info: fig/small-scale-scenes-eps-converted-to.pdf used on in
+put line 8.
+(pdftex.def)             Requested size: 173.56177pt x 120.98178pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\OT1/cmr/bx/n/9 Fig.10. \OT1/cmr/m/n/9 Small-scale field ex-per-i-ment
+ []
+
+Package epstopdf Info: Source file: <fig/small-scale-chart.eps>
+(epstopdf)                    date: 2013-08-29 18:32:09
+(epstopdf)                    size: 3955392 bytes
+(epstopdf)             Output file: <fig/small-scale-chart-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2013-08-29 18:32:44
+(epstopdf)                    size: 762703 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/small-scale-chart-eps-
+converted-to.pdf fig/small-scale-chart.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/small-scale-chart-eps-converted-to.pdf, id=211, 1193.45876pt x 1192.455pt>
+File: fig/small-scale-chart-eps-converted-to.pdf Graphic file (type pdf)
+<use fig/small-scale-chart-eps-converted-to.pdf>
+Package pdftex.def Info: fig/small-scale-chart-eps-converted-to.pdf used on inp
+ut line 14.
+(pdftex.def)             Requested size: 173.56177pt x 173.40192pt.
+
+Overfull \hbox (24.38318pt too wide) in paragraph at lines 6--19
+ [] 
+ []
+
+Package epstopdf Info: Source file: <fig/median-scale-scenes.eps>
+(epstopdf)                    date: 2013-07-22 20:25:01
+(epstopdf)                    size: 2075720 bytes
+(epstopdf)             Output file: <fig/median-scale-scenes-eps-converted-to.p
+df>
+(epstopdf)                    date: 2013-08-06 17:06:30
+(epstopdf)                    size: 238810 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/median-scale-scenes-ep
+s-converted-to.pdf fig/median-scale-scenes.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/median-scale-scenes-eps-converted-to.pdf, id=212, 733.74126pt x 415.5525pt
+>
+File: fig/median-scale-scenes-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/median-scale-scenes-eps-converted-to.pdf>
+Package pdftex.def Info: fig/median-scale-scenes-eps-converted-to.pdf used on i
+nput line 51.
+(pdftex.def)             Requested size: 173.56177pt x 98.29527pt.
+
+Underfull \hbox (badness 4805) in paragraph at lines 53--53
+[]\OT1/cmr/bx/n/9 Fig.12. \OT1/cmr/m/n/9 Median-scale field ex-per-i-ment
+ []
+
+Package epstopdf Info: Source file: <fig/median-scale-chart.eps>
+(epstopdf)                    date: 2013-08-29 18:41:08
+(epstopdf)                    size: 3084206 bytes
+(epstopdf)             Output file: <fig/median-scale-chart-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-29 18:41:40
+(epstopdf)                    size: 600450 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/median-scale-chart-eps
+-converted-to.pdf fig/median-scale-chart.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/median-scale-chart-eps-converted-to.pdf, id=213, 549.05125pt x 1206.5075pt
+>
+File: fig/median-scale-chart-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/median-scale-chart-eps-converted-to.pdf>
+Package pdftex.def Info: fig/median-scale-chart-eps-converted-to.pdf used on in
+put line 57.
+(pdftex.def)             Requested size: 104.1381pt x 228.83379pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\OT1/cmr/bx/n/9 Fig.13. \OT1/cmr/m/n/9 Median-scale
+ []
+
+[11 <./fig/small-scale-scenes-eps-converted-to.pdf> <./fig/small-scale-chart-ep
+s-converted-to.pdf>]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [12 <./fig/median-scale-scenes-eps-converted-to.pdf> <./fig/median-scale-chart
+-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig/large-scale-scenes.eps>
+(epstopdf)                    date: 2013-08-29 17:21:18
+(epstopdf)                    size: 2216092 bytes
+(epstopdf)             Output file: <fig/large-scale-scenes-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2013-08-29 17:22:44
+(epstopdf)                    size: 133085 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/large-scale-scenes-eps
+-converted-to.pdf fig/large-scale-scenes.eps>
+(epstopdf)             \includegraphics on input line 93.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/large-scale-scenes-eps-converted-to.pdf, id=272, 1207.51125pt x 612.2875pt
+>
+File: fig/large-scale-scenes-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/large-scale-scenes-eps-converted-to.pdf>
+Package pdftex.def Info: fig/large-scale-scenes-eps-converted-to.pdf used on in
+put line 93.
+(pdftex.def)             Requested size: 238.49121pt x 120.92311pt.
+Package epstopdf Info: Source file: <fig/large-scale-campus-map.eps>
+(epstopdf)                    date: 2013-07-22 00:01:26
+(epstopdf)                    size: 16534308 bytes
+(epstopdf)             Output file: <fig/large-scale-campus-map-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2013-08-06 17:06:33
+(epstopdf)                    size: 588489 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/large-scale-campus-map
+-eps-converted-to.pdf fig/large-scale-campus-map.eps>
+(epstopdf)             \includegraphics on input line 135.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/large-scale-campus-map-eps-converted-to.pdf, id=273, 931.48pt x 613.29124p
+t>
+File: fig/large-scale-campus-map-eps-converted-to.pdf Graphic file (type pdf)
+ <use fig/large-scale-campus-map-eps-converted-to.pdf>
+Package pdftex.def Info: fig/large-scale-campus-map-eps-converted-to.pdf used o
+n input line 135.
+(pdftex.def)             Requested size: 173.56177pt x 114.27124pt.
+Package epstopdf Info: Source file: <fig/large-scale-building5-map.eps>
+(epstopdf)                    date: 2013-07-22 00:00:34
+(epstopdf)                    size: 17051969 bytes
+(epstopdf)             Output file: <fig/large-scale-building5-map-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2013-08-06 17:06:34
+(epstopdf)                    size: 327941 bytes
+(epstopdf)             Command: <repstopdf --outfile=fig/large-scale-building5-
+map-eps-converted-to.pdf fig/large-scale-building5-map.eps>
+(epstopdf)             \includegraphics on input line 141.
+Package epstopdf Info: Output file is already uptodate.
+
+<fig/large-scale-building5-map-eps-converted-to.pdf, id=274, 934.49126pt x 615.
+29875pt>
+File: fig/large-scale-building5-map-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use fig/large-scale-building5-map-eps-converted-to.pdf>
+Package pdftex.def Info: fig/large-scale-building5-map-eps-converted-to.pdf use
+d on input line 141.
+(pdftex.def)             Requested size: 173.56177pt x 114.27914pt.
+
+Overfull \hbox (24.38318pt too wide) in paragraph at lines 133--146
+ [] 
+ []
+
+) [13 <./fig/large-scale-scenes-eps-converted-to.pdf>] (./Conclusion.tex)
+(./Thesis-llncs.bbl [14 <./fig/large-scale-campus-map-eps-converted-to.pdf> <./
+fig/large-scale-building5-map-eps-converted-to.pdf>]
+Underfull \hbox (badness 1496) in paragraph at lines 58--62
+[]\OT1/cmr/m/n/9 Glasser, P.C.:  An in-tro-duc-tion to the use of com-ple-men-t
+ary an in-tro-
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 58--62
+\OT1/cmr/m/n/9 duc-tion to the use of com-ple-men-tary fil-ters for fu-sion of 
+sen-sor data.
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+[]\OT1/cmr/m/n/9 Chien, C.S.:  A visual-based po-si-tion-ing sys-tem source cod
+e.
+ []
+
+) [16] (./Thesis-llncs.aux) ) 
+Here is how much of TeX's memory you used:
+ 4201 strings out of 493117
+ 62137 string characters out of 6135433
+ 135184 words of memory out of 5000000
+ 7574 multiletter control sequences out of 15000+600000
+ 7970 words of font info for 29 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,14n,32p,1416b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.p
+fb>
+Output written on Thesis-llncs.pdf (16 pages, 3613015 bytes).
+PDF statistics:
+ 392 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+

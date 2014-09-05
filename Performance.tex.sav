@@ -1,0 +1,109 @@
+﻿\subsection{Small-scale field experiment}
+For small-scale field experiments, we choose an 8m x 8m playground. The MRP is a QR code on a paper of the size 17.65cm x 17.65cm, which is illustrated in figure~\ref{fg-small-scale-scenes}. The collected data includes standard e-compass (accelerometer and magnetometer) and complementary filter (fused with gyroscope) results. The experiment results are shown in figure~\ref{fg-small-scale-chart} and the statistic results are shown in table~\ref{tb-small-scale-analysis}.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/small-scale-scenes.eps}\\
+  \caption{Small-scale field experiment scenes.}\label{fg-small-scale-scenes}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/small-scale-chart.eps}\\
+  \caption{Small-scale field experiment log chart.}\label{fg-small-scale-chart}
+\end{figure}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline\hline
+    Max Error Distance & 0.496 meters & 0.374 meters \\ \hline
+    Min Error Distance & 0.112 meters & 0.022 meters \\ \hline
+    Average Error Ratio & 4.11\% & 3.61\% \\ \hline
+    Standard Deviation & 0.1 meters & 0.07 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Small-scale field experiment analysis results.}\label{tb-small-scale-analysis}
+\end{table}
+
+*** comments
+
+\subsection{Median-scale field experiment}
+In median-scale field experiment, we choose an 16m x 35m plaza as the experiment environment. The MRP is an QR code poster with 54.3cm x 54.2cm size that you can see in figure~\ref{fg-median-scale-scenes}. Same as small-scale experiment, results included standard e-compass results and complementary filter results. On the other hand, we also collect GPS result from "Garmin Dakota 20" navigation device. The experiment result chart shown in figure~\ref{fg-median-scale-chart} and the analysis results are shown in table~\ref{tb-median-scale-analysis}. By the way, GPS results is not good enough for analysis, but we still can observe the rough outline matched with ground truth.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/median-scale-scenes.eps}\\
+  \caption{Median-scale field experiment scenes.}\label{fg-median-scale-scenes}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/median-scale-chart.eps}\\
+  \caption{Median-scale field experiment results.}\label{fg-median-scale-chart}
+\end{figure}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline\hline
+    Max Error Distance & 1.91 meters & 1.85 meters \\ \hline
+    Min Error Distance & 0.07 meters & 0.09 meters \\ \hline
+    Average Error Ratio & 4.49\% & 4.18\% \\ \hline
+    Standard Deviation & 0.4 meters & 0.36 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Median-scale field experiment analysis results.}\label{tb-median-scale-analysis}
+\end{table}
+Results shows the system can measure 
+
+\subsection{Large-scale field experiment}
+In large-scale field experiment, we choose NCU Main Library Building as our MRP. We stand on one specified position in attic of Engineering Building 5 to measure MRP in NCU campus(See in figure~\ref{fg-large-scale-scenes}).
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-scenes.eps}\\
+  \caption{Large-scale field experiment scenes in National Central University.}\label{fg-large-scale-scenes}
+\end{figure}
+The experiment result chart shown in figure~\ref{large-scale-campus-map} and figure~\ref{large-scale-building5-map} that the library icon on map denote as main library building, red flag denote as ground truth in this experiment, blue circles denote as standard method results, red circles denote as complementary filter method results. Table~\ref{tb-large-scale-values} shows measured results, and the analysis results are shown in table~\ref{tb-large-scale-analysis}.
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l | l |}
+    \hline
+    \multicolumn{2}{ |c| }{Standard} & \multicolumn{2}{ c| }{Complementary Filter} \\ \hline
+    Error Distance & Error Ratio & Error Distance & Error Ratio \\ \hline
+    \hline
+    55.94779483 & 7.63\% & 41.01243255 & 5.59\% \\ \hline
+    23.760599 & 3.24\% & 30.46624108 & 4.15\% \\ \hline
+    55.33866059 & 7.53\% & 32.29396614 & 4.40\% \\ \hline
+    16.77831869 & 2.29\% & 30.22630963 & 4.12\% \\ \hline
+    30.18733363 & 4.11\% & 29.07574148 & 3.96\% \\ \hline
+    18.36331176 & 2.50\% & 13.21252122 & 1.80\% \\ \hline
+    22.71171715 & 3.10\% & 17.99106596 & 2.45\% \\ \hline
+    17.22804678 & 2.35\% & 14.44225332 & 1.97\% \\ \hline
+    29.55978553 & 4.03\% & 14.68165469 & 2.00\% \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Large-scale field experiment error ratio.}\label{tb-large-scale-values}
+\end{table}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline
+    \hline
+    Max Error Distance & 55.95 meters & 41.01 meters \\ \hline
+    Min Error Distance & 16.78 meters & 13.21 meters \\ \hline
+    Average Error Ratio & 4.09\% & 3.3\% \\ \hline
+    Standard Deviation & 15.33 meters & 993 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Large-scale field experiment analysis results.}\label{tb-large-scale-analysis}
+\end{table}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-campus-map.eps}\\
+  \caption{Campus overview large-scale field experiment result map.}\label{large-scale-campus-map}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-building5-map.eps}\\
+  \caption{Zoom in Building 5 large-scale field experiment result map.}\label{large-scale-building5-map}
+\end{figure} 
+
+*** comments

@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thesis-llncs.aux
+The style file: splncs.bst
+Database file #1: reference.bib
+Warning--entry type for "wiki-angle-of-view" isn't style-file defined
+--line 183 of file reference.bib
+Warning--entry type for "wiki-taipei101" isn't style-file defined
+--line 192 of file reference.bib
+Warning--entry type for "wiki-projection" isn't style-file defined
+--line 214 of file reference.bib
+Warning--entry type for "wiki-spherical-coordinate-system" isn't style-file defined
+--line 221 of file reference.bib
+Warning--entry type for "wiki-sma" isn't style-file defined
+--line 228 of file reference.bib
+Warning--empty journal in bekkelien2012bluetooth
+Warning--empty journal in bernstein1998introduction
+You've used 22 entries,
+            2087 wiz_defined-function locations,
+            584 strings with 6762 characters,
+and the built_in function-call counts, 4663 in all, are:
+= -- 420
+> -- 192
+< -- 7
++ -- 75
+- -- 53
+* -- 258
+:= -- 662
+add.period$ -- 17
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 240
+empty$ -- 509
+format.name$ -- 53
+if$ -- 1116
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 11
+newline$ -- 105
+num.names$ -- 22
+pop$ -- 105
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 184
+swap$ -- 87
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 40
+width$ -- 24
+write$ -- 212
+(There were 7 warnings)

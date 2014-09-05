@@ -1,0 +1,108 @@
+﻿\subsection{Small-scale field experiments}
+For small-scale field experiments, we choose an 8m x 8m playground as the experiment environment. The MRP is a QR code on a paper of the size 17.65cm x 17.65cm, which is illustrated in Figure~\ref{fg-small-scale-scenes}. The collected data includes standard e-compass (accelerometer and magnetometer) and complementary filter (fused with gyroscope) results. The experiment results are shown in Figure~\ref{fg-small-scale-chart} and the statistic results are shown in Table~\ref{tb-small-scale-analysis}.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/small-scale-scenes.eps}\\
+  \caption{Small-scale field experiment scenes.}\label{fg-small-scale-scenes}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/small-scale-chart.eps}\\
+  \caption{Small-scale field experiment log chart.}\label{fg-small-scale-chart}
+\end{figure}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline\hline
+    Max Error Distance & 0.496 meters & 0.374 meters \\ \hline
+    Min Error Distance & 0.112 meters & 0.022 meters \\ \hline
+    Average Error Ratio & 4.11\% & 3.61\% \\ \hline
+    Standard Deviation & 0.1 meters & 0.07 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Small-scale field experiment statistic results.}\label{tb-small-scale-analysis}
+\end{table}
+
+The results of the small-scale field experiments indicate that the system has a high precision for positioning in situations such as in a classroom, a conference room, or a living room.
+
+\subsection{Median-scale field experiments}
+For median-scale field experiments, we choose a 16m x 35m plaza as the experiment environment. The MRP is a QR code on a poster of the size 54.3cm x 54.2cm, as can be seen in Figure~\ref{fg-median-scale-scenes}. Similar to the small-scale experiments, the collected data includes standard e-compass and complementary filter results. In addition, we also collect the GPS results obtained from a \emph{Garmin Dakota 20} navigation device. The experiment results are shown in Figure~\ref{fg-median-scale-chart} and the statistic results are shown in Table~\ref{tb-median-scale-analysis}.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/median-scale-scenes.eps}\\
+  \caption{Median-scale field experiment scenes.}\label{fg-median-scale-scenes}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/median-scale-chart.eps}\\
+  \caption{Median-scale field experiment results.}\label{fg-median-scale-chart}
+\end{figure}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline\hline
+    Max Error Distance & 1.91 meters & 1.85 meters \\ \hline
+    Min Error Distance & 0.07 meters & 0.09 meters \\ \hline
+    Average Error Ratio & 4.49\% & 4.18\% \\ \hline
+    Standard Deviation & 0.4 meters & 0.36 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Median-scale field experiment statistic results.}\label{tb-median-scale-analysis}
+\end{table}
+The results of the median-scale field experiments demonstrate that the system has a much higher accuracy rate for positioning than the conventional GPS in places such as the shopping mall and the exhibit hall.
+To evaluate performance of the proposed visual-based positioning system, we conducted small, median, and large scale experiments.
+\subsection{Large-scale field experiments}
+For large-scale field experiments, we choose the NCU Main Library Building as experiment MRP. We stand on the rooftop of the Engineering Building 5 facing the MRP to obtain our position, as illustrated in Figure~\ref{fg-large-scale-scenes}. The range between the MRP and us is around 800 meters.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-scenes.eps}\\
+  \caption{Large-scale field experiment scenes in National Central University.}\label{fg-large-scale-scenes}
+\end{figure}
+The experiment results are shown in Figure~\ref{large-scale-campus-map} and Figure~\ref{large-scale-building5-map}. In the figures, the main library is denoted by an icon and our true position (obtained by GPS) is denoted by a red flag. Each blue circle indicates a result of the standard method, and each red circle is a result of the complementary filter method. The statistic results are shown in Table~\ref{tb-large-scale-values} and Table~\ref{tb-large-scale-analysis}.
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l | l |}
+    \hline
+    \multicolumn{2}{ |c| }{Standard} & \multicolumn{2}{ c| }{Complementary Filter} \\ \hline
+    Error Distance & Error Ratio & Error Distance & Error Ratio \\ \hline
+    \hline
+    55.94779483 & 7.63\% & 41.01243255 & 5.59\% \\ \hline
+    23.760599 & 3.24\% & 30.46624108 & 4.15\% \\ \hline
+    55.33866059 & 7.53\% & 32.29396614 & 4.40\% \\ \hline
+    16.77831869 & 2.29\% & 30.22630963 & 4.12\% \\ \hline
+    30.18733363 & 4.11\% & 29.07574148 & 3.96\% \\ \hline
+    18.36331176 & 2.50\% & 13.21252122 & 1.80\% \\ \hline
+    22.71171715 & 3.10\% & 17.99106596 & 2.45\% \\ \hline
+    17.22804678 & 2.35\% & 14.44225332 & 1.97\% \\ \hline
+    29.55978553 & 4.03\% & 14.68165469 & 2.00\% \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Large-scale field experiment error ratio.}\label{tb-large-scale-values}
+\end{table}
+\begin{table}
+\begin{center}
+    \begin{tabular}{ | l | l | l | l |}
+    \hline
+    Description & Standard & Complementary Filter \\ \hline
+    \hline
+    Max Error Distance & 55.95 meters & 41.01 meters \\ \hline
+    Min Error Distance & 16.78 meters & 13.21 meters \\ \hline
+    Average Error Ratio & 4.09\% & 3.3\% \\ \hline
+    Standard Deviation & 15.33 meters & 993 meters \\ \hline
+    \end{tabular}
+\end{center}
+\caption{Large-scale field experiment statistic results.}\label{tb-large-scale-analysis}
+\end{table}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-campus-map.eps}\\
+  \caption{Campus map to large-scale field experiment results.}\label{large-scale-campus-map}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{fig/large-scale-building5-map.eps}\\
+  \caption{Zoom in Engineering Building 5 map to large-scale field experiment results.}\label{large-scale-building5-map}
+\end{figure}
+The results of the large-scale field experiments indicate that although the error percentage of our system is low, the absolute errors of our system can be quite large when the MRP is far away from the camera. For applications such as virtual augmentations and location-based services, this accuracy is acceptable. However, for applications that require high precisions, our system may not be suitable. 
