@@ -79,10 +79,6 @@ Developers, A.:
   \url{http://developer.android.com/guide/topics/sensors/sensors_overview.html}
   (2013)
 
-\bibitem{wiki-spherical-coordinate-system}
-wikipedia:
-\newblock Spherical coordinate system
-
 \bibitem{developers2013adt}
 Developers, A.:
 \newblock Android developer tools (adt) plugin for eclipse.

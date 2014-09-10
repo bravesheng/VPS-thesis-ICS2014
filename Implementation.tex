@@ -102,16 +102,13 @@ The object has a fixed ratio to its projected image no matter how much of the di
 \begin{proof}
    Let the object plane be parallel to the image plane. We first assume the distance between the object plane and the lens (denoted as $D_o$) to be $x$ times of the distance between the lens and the image plane (denoted as $D_p$). In addition, we assume $O_\alpha$ to be originally facing directly to the camera and its projected image to be $P_\alpha$, as shown in Figure~\ref{fig-proof-projection}.
    Based on triangle rules, we have
-    \[P_\alpha=D_p\tan(\alpha),\]
-    \[O_\alpha=D_o\tan(\alpha)=x(D_p\tan(\alpha)).\] Consequently,
+    \[P_\alpha=D_p\tan(\alpha),O_\alpha=D_o\tan(\alpha)=x(D_p\tan(\alpha)).\] Consequently,
     \[O_\alpha=x(P_\alpha)\]
 
    Now assume that the object is shifted up by a distance. Without loss of generality, let the new location of the object to be $O_\beta$ and its projected image to be $P_\beta$.
    In case when $O_\alpha$ and $O_\beta$ do not overlap each other, as illustrated in Figure~\ref{fig-proof-projection}, we have
-    \[P_\beta=D_p\tan(\alpha+\beta+\gamma)-D_p\tan(\alpha+\gamma)\]
-    \[=D_p(\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma)),\]
-    \[O_\beta=D_o\tan(\alpha+\beta+\gamma)-D_o\tan(\alpha+\gamma)\]
-    \[=xD_p(\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma)).\] Consequently,
+    \[P_\beta=D_p\tan(\alpha+\beta+\gamma)-D_p\tan(\alpha+\gamma)=D_p(\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma)),\]
+    \[O_\beta=D_o\tan(\alpha+\beta+\gamma)-D_o\tan(\alpha+\gamma)=xD_p(\tan(\alpha+\beta+\gamma)-\tan(\alpha+\gamma)).\] Consequently,
     \[O_\beta=x(P_\beta)\]
 
     As a result, we have
@@ -161,20 +158,21 @@ Once $\delta$ is obtained, according to the trigonometric functions, we can comp
 
 \subsection{Coordinate System Transformation}
 Now we have the distance between camera and MRP, the orientation of camera, and the position of MRP in camera image. We can use these data to construct the vector \emph{$V_1$} that extends from the mobile device to MRP. Table~\ref{tb-comare-reference-system} summarizes the notation of different positions with respect to various reference systems.
-\begin{table}
+\begin{wraptable}{r}{7cm}
 \begin{center}
+\vspace{-20pt}
     \begin{tabular}{ | l | l | l | }
     \hline
-    Reference system & Position of MRP & Position of camera\\ \hline\hline
-    Global reference system & $LLA_{MRP}$ & $LLA_{CAMERA}$\\ \hline
-    MRP reference system & $(0,0,0)$ & $(x,y,z)$\\ \hline
-    Mobile reference system & $(D,\zeta,\eta)$ & $(0,0,0)$\\
-    spherical coordinate~\cite{wiki-spherical-coordinate-system} & & \\ \hline
+    Reference system & MRP position & Camera position\\ \hline\hline
+    Global & $LLA_{MRP}$ & $LLA_{CAMERA}$\\ \hline
+    MRP & $(0,0,0)$ & $(x,y,z)$\\ \hline
+    Mobile & $(D,\zeta,\eta)$ & $(0,0,0)$\\ \hline
     \end{tabular}
 \end{center}
+\vspace{-15pt}
 \caption{Comparison of various reference systems}\label{tb-comare-reference-system}
-\end{table}
-
+\vspace{-15pt}
+\end{wraptable} 
 
 Notice that in the mobile reference system, $D$ denotes the radial distance of MRP from the camera, the $\zeta$ and $\eta$ denote the horizontal and vertical angular extent from the center of image to the position of image that MRP is located (See Figure~\ref{fig-mobile-reference-system}). For orientation angles, $u,v,w$ denote the pitch, roll, azimuth deviation between camera and MRP (See Figure~\ref{fig-orientation}).
 
@@ -213,34 +211,25 @@ In the following, we summarize the equations that transform \emph{$V_1$} to the 
 \begin{enumerate}
   \item Rotate Y axis (roll angle)
 \[\begin{array}{l}
-x_1 = 0\\
-y_1 = D\\
-z_1 = 0
+x_1 = 0 , y_1 = D , z_1 = 0
 \end{array}\]
   \item Rotate X axis (pitch angle)
 \[\begin{array}{l}
-x_2 = x_1\\
-y_2 = y_1 \times \cos (u-\eta)\\
-z_2 = y_1 \times \sin (u-\eta)\\
+x_2 = x_1 , y_2 = y_1 \times \cos (u-\eta) , z_2 = y_1 \times \sin (u-\eta)
 \end{array}\]
   \item Rotate Z axis (azimuth angle)
 \[\begin{array}{l}
-x_3 =  - y_2 \times \sin (w-\zeta)\\
-y_3 = y_2 \times \cos (w-\zeta)\\
-z_3 = z_2
+x_3 =  - y_2 \times \sin (w-\zeta) , y_3 = y_2 \times \cos (w-\zeta) , z_3 = z_2
 \end{array}\]
   \item Change values order compatible to global reference system Taiwan area(northern/eastern Hemisphere).
 \[\begin{array}{l}
-x =  - x_3\\
-y =  - y_3\\
-z = z_3
+x =  - x_3 , y =  - y_3 , z = z_3
 \end{array}\]
 \end{enumerate}
 \subsection{Hardware}
-Our hardware environment is the HTC One Android smartphone, which has a build-in camera, gyroscope, geomagnetic field sensors and accelerometers.
-Table~\ref{tb-key-hardware} shows the specification of key hardware components that we used in this project. Of course, our software can be deployed not only to the HTC One but also to any other Android devices.
-\begin{table}
+\begin{wraptable}{r}{7cm}
 \begin{center}
+   \vspace{-35pt}
     \begin{tabular}{ | l | l |}
     \hline
     Name & Specification \\ \hline\hline
@@ -248,7 +237,7 @@ Table~\ref{tb-key-hardware} shows the specification of key hardware components t
     & Max Video Size: 1920 x 1088 \\
     & Horizontal View Angle: 69.6 \\
     &Vertical View Angle: 43 \\ \hline
-    Magnetic field sensor & Vendor: Asahi Kasei Microdevices \\
+    Magnetic & Vendor: Asahi Kasei Microdevices \\
     & Model: AK8963 3-axis Magnetic field sensor \\ \hline
     Accelerometer & Vendor: BOSCH \\
     & Model: MBA250 3-axis Accelerometer \\ \hline
@@ -256,9 +245,12 @@ Table~\ref{tb-key-hardware} shows the specification of key hardware components t
     & Model: R3GD20 Gyroscope seosnr \\ \hline
     \end{tabular}
 \end{center}
+\vspace{-15pt}
 \caption{Key hardware components used in our visual-based positioning system.}\label{tb-key-hardware}
-\end{table}
-
+\end{wraptable} 
+Our hardware environment is the HTC One Android smartphone, which has a build-in camera, gyroscope, geomagnetic field sensors and accelerometers.
+Table~\ref{tb-key-hardware} shows the specification of key hardware components that we used in this project. Of course, our software can be deployed not only to the HTC One but also to any other Android devices.
+\\
 \subsection{Software}
 Android is a Linux-based operating system designed primarily for touchscreen mobile devices such as smartphones and tablet computers. A developer survey conducted in May 2013 found that Android is the most popular platform for developers, It has been used by 71\% of the mobile developer population. Our experimental OS is Android version 4.1.2. The software is developed under The Eclipse IDE with The Android Developer Tools (ADT) plugin~\cite{developers2013adt}.
 We choose ZXing~\cite{mackintosh2012zxing} as our QR-code decoding library. ZXing is an open-source, multi-format 1D/2D barcode image processing library implemented in Java.
